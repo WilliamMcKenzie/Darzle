@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Darzle</title>
+  <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body" >
+  <!--...
+      <div class="tutorial-modal hidden" style="display: flex;">
+      <header class="header">
+          Catagories:
+      </header>
+      <div class="catagories">
+        <div class="name " style="display: flex;">
+          <header>Name</header>
+          <img style="height:3em; width: 3em;" src="icons/name-icon-true.png">
+          <br>
+          <p>If it is green that means the item is correct, otherwise it is wrong.</p>
+        </div>
+      </div>
+    </div>
+  -->
+  <div class="header">
+    <img src="icons/favicon.png" style="height: 2.8em; width: 2.8em;">
+    <header>Darzle</header>
+    <div style="display: flex; margin-left: 40%;">
+      <button style="margin-right: 30%;" class="questionmark-button hidden"></button>
+      <button class="infinite-button hidden"></button>
+    </div>
+  </div>
+  <div id="guesses" style="width: 100%; display: flex; padding-top: 3vw; flex-direction: column;">
+    <div id="mask" class="hidden"></div>
+    <div id="win-modal" class="hidden">
+      <button class="exit-win-modal" id="exit-button">X</button>
+      <header class="result">
+        You Won!
+      </header>
+      <div id="scorediv">
+        <p id="score-0">⬜⬜⬜⬜⬜⬜</p>
+        <p id="score-1">⬜⬜⬜⬜⬜⬜</p>
+        <p id="score-2">⬜⬜⬜⬜⬜⬜</p>
+        <p id="score-3">⬜⬜⬜⬜⬜⬜</p>
+        <p id="score-4">⬜⬜⬜⬜⬜⬜</p>
+        <p id="score-5">⬜⬜⬜⬜⬜⬜</p>
+      </div>
+      <div id="copy-div">
+        <p id="share-text">Share your score</p>
+        <button id="copy-button"></button>
+      </div>
+    </div>
+    <div id="rows" style="flex: 1;">
+      <div id="row-1" class="row" style="padding-top:10px">
+        <button src="icon/class-icon.png" class="hidden"></button>
+        <button class="box" disabled=true id=1></button>
+        <button class="box" disabled=true id=2></button>
+        <button class="box" disabled=true id=3></button>
+        <button class="box" disabled=true id=4></button>
+        <button class="box" disabled=true id=5></button>
+        <button class="box" disabled=true id=6></button>
+      </div>
+      <div id="row-2" class="row">
+        <button class="hidden"></button>
+        <button class="box" disabled=true id=7></button>
+        <button class="box" disabled=true id=8></button>
+        <button class="box" disabled=true id=9></button>
+        <button class="box" disabled=true id=10></button>
+        <button class="box" disabled=true id=11></button>
+        <button class="box" disabled=true id=12></button>
+      </div>
+      <div id="row-3" class="row">
+        <button class="hidden"></button>
+        <button class="box" disabled=true id=13></button>
+        <button class="box" disabled=true id=14></button>
+        <button class="box" disabled=true id=15></button>
+        <button class="box" disabled=true id=16></button>
+        <button class="box" disabled=true id=17></button>
+        <button class="box" disabled=true id=18></button>
+      </div>
+      <div id="row-4" class="row">
+        <button class="hidden"></button>
+        <button class="box" disabled=true id=19></button>
+        <button class="box" disabled=true id=20></button>
+        <button class="box" disabled=true id=21></button>
+        <button class="box" disabled=true id=22></button>
+        <button class="box" disabled=true id=23></button>
+        <button class="box" disabled=true id=24></button>
+      </div>
+      <div id="row-5" class="row">
+        <button class="hidden"></button>
+        <button class="box" disabled=true id=25></button>
+        <button class="box" disabled=true id=26></button>
+        <button class="box" disabled=true id=27></button>
+        <button class="box" disabled=true id=28></button>
+        <button class="box" disabled=true id=29></button>
+        <button class="box" disabled=true id=30></button>
+      </div>
+    <div id="row-6" class="row">
+      <button class="hidden"></button>
+      <button class="box" disabled=true id=31></button>
+      <button class="box" disabled=true id=32></button>
+      <button class="box" disabled=true id=33></button>
+      <button class="box" disabled=true id=34></button>
+      <button class="box" disabled=true id=35></button>
+      <button class="box" disabled=true id=36></button>
+    </div>
+  </div>
+  <div class="input" style="flex: 1;">
+    <div id="recommended-words" class="hidden">
+      <p></p>
+    </div>
+    <label id="guess-label">Guess:</label>
+    <input id="guess-input" type="text" placeholder="Ex. ominous arbalest" autocomplete="off">
+    <button id="submit-guess">></button>
+  </div>
+  <script type="module" src="script.js"></script> 
+</body>
+
+</html>

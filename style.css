@@ -1,0 +1,287 @@
+html, body {
+  font-family: 'Tahoma','sans-serif';
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #3c4448;
+  --primary: #ffffff;
+  --primaryBorder: #DBE7EC;
+  --primaryDark: #a8bac2;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#mask{
+  position:absolute;
+  z-index: 100;
+  background-color: black;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity: 0;
+}
+#win-modal{
+  background-color: white;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 101;
+  padding: 20px;
+  outline: 2px solid var(--primaryBorder);
+  opacity: 0;
+}
+.exit-win-modal{
+  float: right;
+  height: 2em;
+  width: 2em;
+  border-color: var(--primaryBorder);
+  border-style: solid;
+  background-color: var(--primary);
+  color: #0f0f10;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#copy-div{
+   width: 400px;
+   margin: 0 auto;
+}
+#share-text{
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto;
+  height: 52px; 
+  float: left;
+  margin-left: 18%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border: 4px solid var(--primaryBorder);
+}
+#copy-button{
+  background: url(icons/share-icon.png) no-repeat center;
+  background-color: var(--primaryBorder);
+  background-size: 40px 40px; 
+  float: left;
+  height: 80px; 
+  width: 60px;
+  border: 4px solid var(--primaryBorder);
+}
+
+
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 15%;
+  border-bottom: solid;
+  border-color: var(--primaryBorder);
+}
+
+header {
+  font-size: 40px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+
+.box {
+  width: 63px;
+  height: 63px;
+  font-size: 30px;
+  font-weight: 700;
+  border-color: var(--primaryBorder);
+  border-style: solid;
+  color: #0f0f10;
+  background-color: var(--primary);
+  transition: 1s;
+}
+
+.box:hover {
+  transform: rotate(5deg);
+}
+
+#rows{
+  float: left;
+}
+
+.row {
+  padding-bottom: 5px;
+}
+
+#recommended-words{
+  border-top-color: var(--primaryDark);
+  border-top-style: solid;
+  background-color: var(--primaryBorder);
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: -0.8em;
+  margin-left: 6em;
+  margin-right: 1.6em;
+}
+
+.input {
+  float: right;
+  font-size: 1.5em;
+  bottom: 5px;
+  margin-left: 42%;
+  position: absolute;
+}
+
+#guess-label{
+  padding-right: 10px;
+}
+
+input {
+  border-color: var(--primaryBorder);
+  border-style: solid;
+  padding-left: 10px;
+  transition: 1s;
+  width:14em;
+}
+input:focus {
+  transform: scale(1.05); 
+  outline: none;
+  border-color: var(--primaryDark);
+}
+.recommended-button{
+  color: var(--primaryDark);
+  padding-left: 10px;
+  background-color: var(--primaryBorder);
+  text-align: left;
+  border: none;
+}
+.recommended-button:hover{
+  background-color: var(--primary);
+}
+
+#submit-guess {
+  border-color: var(--primaryBorder);
+  border-style: solid;
+  background-color: var(--primary);
+  transition: 0.5s;
+}
+
+#submit-guess:hover {
+  transform: scale(1.05); 
+  border-color: var(--primaryDark);
+}
+
+#submit-guess:focus {
+  border-color: var(--primaryBorder);
+  border-style: solid;
+  background-color: var(--primary);
+  transform: scale(1);
+  
+}
+
+
+
+.nameTrue{
+  background: url(icons/name-icon-true.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.nameFalse{
+  background: url(icons/name-icon-false.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.dungeon{
+  background: url(icons/dungeon-icon.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.tier{
+  background: url(icons/tier-icon.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.slot{
+  background: url(icons/slot-icon.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.classes{
+  background: url(icons/class-icon.png) no-repeat center;
+  background-size: 50px 50px;
+}
+
+.color{
+  background: url(icons/color-icon.png) no-repeat center;
+  background-size: 50px 50px;
+}
+.questionmark-button{
+  border: none;
+  padding: 3px;
+  background: url(icons/questionmark-icon.png) no-repeat center;
+  background-color: var(--primaryBorder);
+  background-size: 3.5em 3.5em;
+  height: 4em;
+  width: 4em;
+}
+
+.infinite-button{
+  border: none;
+  padding: 3px;
+  background: url(icons/infinite-icon.png) no-repeat center;
+  background-size: 3.5em 3.5em;
+  background-color: var(--primaryBorder);
+  height: 4em;
+  width: 4em;
+}
+
+
+
+.fadeIn {
+  animation-name: fadeInAnim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+.fadeInFull {
+  animation-name: fadeInFullAnim;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+.fadeOut {
+  animation-name: fadeOutAnim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.disappear {
+  animation-name: disappear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+  animation-duration: 0s;
+}
+
+@keyframes fadeInFullAnim {
+  0%{opacity: 0; z-index: 100;}
+  100%{opacity: 1; z-index: 101;}
+}
+@keyframes fadeInAnim {
+  0%{opacity: 0; z-index: 0;}
+  100%{opacity: 0.3; z-index: 100;}
+}
+@keyframes fadeOutAnim {
+  0%{}
+  100%{opacity: 0; z-index: 0;}
+}
+@keyframes disappear {
+  0%, 100% {
+    visibility: hidden;
+  }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
