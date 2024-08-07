@@ -1,9 +1,6 @@
 //item
 import items from '/items.js'
 var item = items[Math.floor(Math.random()*items.length)]
-console.log(item.name)
-
-//CREATE RECCOMENDED WORD POP Up EASILY BY USING THE SAME LOGIC AS YOU DO TO MAKE THE RED BORDER GO AWAY, ALSO FINISH NICKNAMES AND ADD UNDERTOP
 
 //UI
 var guesses = []
